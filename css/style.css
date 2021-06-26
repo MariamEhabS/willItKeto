@@ -1,54 +1,66 @@
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
+.navbar-brand a{
+    padding-top: 5%;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+.btn-group{
+    margin-left: 2%;
 }
 
-.clear {
-	clear: both;
-}
+.search-btn{
+    background: #64bd77 ;
+    color: white;
+    margin-top: 2%;    
+} 
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-  margin: 0px;
-}
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header img {
-  width: 5%;
-}
-
-nav, ul{
-  display: flex;
-  flex-direction: row;
-}
-
-ul{
-  width: 50%;
-}
-nav li {
-  margin-right: 2%;
-}
-
-footer {
+.navbar{
+    background: #64bd77;
 
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+/* .main-container{
+    display:block;
+} */
+
+.hdn-search{
+    margin-right: 5%;
+    position: relative;
+    height: 50px;
+  }
+  .hdn-search .hdn-input{
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    border:0;
+    padding: 15px;
+    transition: width 0.3s ease;
+  }
+  
+  .hdn-btn{
+    position: absolute;
+    background: #64bd77;
+    font-size: 24px;
+    border:0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .hdn-btn:focus,
+  .hdn-input:focus{
+    outline: none;
+  }
+  
+  .hdn-search.active .hdn-input{
+    width: 200px;
+  }
+  .hdn-search.active .hdn-btn{
+    transform: translateX(198px)
+  }
+  
+  
+  
+  
+  
